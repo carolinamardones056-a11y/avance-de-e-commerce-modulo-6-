@@ -1,0 +1,50 @@
+[
+  {
+    "id": "060c1d68-0fb5-48b2-bdec-912f2c8d28e1",
+    "nombre": "Kimi no Yoru ni Fureru",
+    "precio": 10990,
+    "stock": 10,
+    "img": "./asset/img/kimi.jpg",
+    "url": "../detalledeproducto.html"
+  },
+  {
+    "id": "bfa86ab5-efda-49a3-a0d0-0a25fc5c84d7",
+    "nombre": "On Doorstep",
+    "precio": 10490,
+    "stock": 12,
+    "img": "./asset/img/on.jpg",
+    "url": "../detalledeproducto2.html"
+  },
+  {
+    "id": "18c21a1b-e9b4-4e2b-baa3-cd0be9af9f8d",
+    "nombre": "Apron Yankee",
+    "precio": 9990,
+    "stock": 8,
+    "img": "./asset/img/apron.jpg",
+    "url": "../detalledeproducto3.html"
+  },
+  {
+    "id": "89b52a78-2cfb-41db-9de5-11756d56d6dc",
+    "nombre": "Subarashii Kiseki ni Yasashii Kimi to",
+    "precio": 10990,
+    "stock": 15,
+    "img": "./asset/img/subarashii.jpg",
+    "url": "../detalledeproducto4.html"
+  },
+  {
+    "id": "3be0da8b-6f7f-4f22-9df7-6eb9ef719119",
+    "nombre": "Jinx",
+    "precio": 11990,
+    "stock": 20,
+    "img": "./asset/img/jinx.jpg",
+    "url": ""
+  },
+  {
+    "id": "787c89a7-2051-41df-a56f-75edc3d9a65a",
+    "nombre": "2020",
+    "precio": 10990,
+    "stock": 5,
+    "img": "./asset/img/2020.jpg",
+    "url": ""
+  }
+]

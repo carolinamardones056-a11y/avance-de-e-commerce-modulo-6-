@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    text-align: center;
+    text-align: justify;
+}
+body {
+   background-color: aqua;
+}
+#productos {
+    display: flex;
+}
+.imagen {
+    text-align: right;
+}
+.info {
+    text-align: left;
+}
+.detalle {
+    display: flex;
+}
+.imgdetalle {
+    width: 80%;
+    height: 80%;
+}
+.card-img-top {
+    object-fit: cover;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+}
+.ticarrito {
+    color: black;
+}
+.btn-primary {
+    background-color: grey;
+    color: antiquewhite;
+}
