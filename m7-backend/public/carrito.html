@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TienditaBl-detalle subarashii </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">TienditaBL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Mangas</a></li>
+            <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
+            <li class="nav-item"><a class="nav-link" href="ventas.html">Historial Ventas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Tu carrito</h1>
+
+        <div class="d-flex gap-2 mb-3">
+            <input id="inputDescuento" class="form-control" placeholder="Código descuento (ej: DESC15)" />
+            <button id="btnAplicarDescuento" class="btn btn-primary">Aplicar</button>
+        </div>
+           <div class="table-responsive">
+          <table class="table table-striped table-bordered align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th>Producto</th>
+                <th class="text-end">Precio</th>
+                <th class="text-center">Acción</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpocarrito">
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Subtotal</th>
+                <th class="text-end" id="subtotal">$0</th>
+                <th></th>
+              </tr>
+              <tr>
+                <th>Total</th>
+                <th class="text-end" id="total">$0</th>
+                <th class="text-center">
+                  <span class="badge text-bg-secondary" id="badgeDescuento">Sin descuento</span>
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <div class="d-flex justify-content-end mb-3">
+            <button id="btnComprarAhora" class="btn btn-success btn-lg">Comprar ahora</button>
+        </div>
+        <a href="productos.html" class="link-volver">← Seguir comprando mangas BL</a>
+
+    </main>
+    <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h5>Sobre Nosotros</h5>
+                    <p>TienditaBL es un espacio dedicado exclusivamente a los mangas Boys’ Love:
+                        historias de romance, crecimiento personal y emociones reales.</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">
+                                <i class="bi bi-house"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="index.html">
+                                <i class="bi bi-info-circle"></i> Nosotros
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="productos.html">
+                                <i class="bi bi-envelope"></i> Mangas
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt-fill"></i> Av. Mundo BL, Campito</li>
+                        <li><i class="bi bi-telephone-fill"></i> +56 9 8208 8313</li>
+                        <li><i class="bi bi-envelope-fill"></i> soporte@tienditabl.cl</li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 mb-3">
+                    <h5>Síguenos</h5>
+
+                </div>
+            </div>
+
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2025 TienditaBL. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="asset/js/app.js"></script>
+</body>
+
+</html>

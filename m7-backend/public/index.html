@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TienditaBL-Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">TienditaBL</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobrenosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="productos.html">Mangas</a></li>
+            <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+            <li class="nav-item"><a class="nav-link" href="ventas.html">Historial Ventas</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            ...
+            <li class="nav-item me-2">
+              <button class="btn btn-outline-light btn-sm" id="btnRegistro">Registro</button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-light btn-sm" id="btnLogin">Iniciar sesión</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <h1 class="saludo">Bienvenido(a) a TienditaBL</h1>
+    <p> Encuentra lo mejor de los mangas BL, recorriendo los diferentes géneros ¡Disfruta tus lecturas!</p>
+    <section class="productos">
+      <header>
+        <h2> Ultimas Actualizaciones</h2>
+      </header>
+      <div class="row" id="todoslosmangas">
+      </div>
+
+
+
+    </section>
+    <section id="sobrenosotros">
+      <header>
+        <h2>Sobre Nosotros</h2>
+
+      </header>
+      <p>
+        Tiendita BL nace como un espacio pensado para fans del Boys’ Love
+        que buscan algo más que solo “comprar mangas”. Queremos que encuentres historias
+        que te acompañen, te representen y te emocionen.
+      </p>
+      <p>
+        Trabajamos con editoriales oficiales y ediciones seleccionadas, priorizando
+        la calidad de impresión, traducción y empaquetado, para que cada tomo llegue
+        en perfecto estado a tus manos.
+      </p>
+      <p>
+        Nuestro objetivo es construir una comunidad BL en la que puedas descubrir
+        nuevos títulos, apoyar a tus autores favoritos y disfrutar tus ships sin culpa.
+      </p>
+    </section>
+
+
+
+  </main>
+
+  <footer class="mt-auto bg-dark text-white pt-4 pb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Sobre Nosotros</h5>
+          <p>TienditaBL es un espacio dedicado exclusivamente a los mangas Boys’ Love:
+            historias de romance, crecimiento personal y emociones reales.</p>
+        </div>
+
+        <div class="col-md-3 mb-3">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">
+                <i class="bi bi-house"></i> Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">
+                <i class="bi bi-info-circle"></i> Nosotros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="productos.html">
+                <i class="bi bi-envelope"></i> Mangas
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Av. Mundo BL, Campito</li>
+            <li><i class="bi bi-telephone-fill"></i> +56 9 8208 8313</li>
+            <li><i class="bi bi-envelope-fill"></i> soporte@tienditabl.cl</li>
+          </ul>
+        </div>
+
+
+        <div class="col-md-3 mb-3">
+          <h5>Síguenos</h5>
+
+        </div>
+      </div>
+
+      <hr class="bg-light">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">&copy; 2025 TienditaBL. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<div class="modal fade" id="modalAuth" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAuthTitle">Inicio de sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="formAuth">
+          <div class="mb-3">
+            <label class="form-label" for="authUsuario">Usuario</label>
+            <input class="form-control" id="authUsuario" required />
+          </div>
+          <div class="mb-2">
+            <label class="form-label" for="authPassword">Password</label>
+            <input class="form-control" id="authPassword" type="password" required />
+          </div>
+
+          <div class="alert alert-danger mt-3 mb-0 py-2 small" id="authError" style="display:none;"></div>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button class="btn btn-primary" id="btnAuthSubmit" type="button">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="asset/js/app.js"></script>
+</body>
+
+</html>
